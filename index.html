@@ -13,14 +13,18 @@
 
 <body>
     <!-- https://getbootstrap.com/docs/4.5/components/navbar/ -->
+    <!-- brand -->
     <nav class="navbar navbar-dark bg-dark mb-3">
         <span class="navbar-brand mx-auto mb-0">New York Times Search</span>
     </nav>
     <div class="container ">
+
+        <!-- https://getbootstrap.com/docs/4.5/components/card/#header-and-footer -->
         <div class="card mb-3" style="width: 90%;">
             <div class="card-header mb-2">
                 Search Terms
             </div>
+            <!-- https://getbootstrap.com/docs/4.5/components/forms/#form-row -->
             <form class="mx-4 my-2">
                 <div class="form-row mb-1">
                     <div class="col">
@@ -30,6 +34,7 @@
                 </div>
                 <div class="form-row mb-1">
                     <div class="col ">
+                        <!-- https://getbootstrap.com/docs/4.0/components/forms/#inline-forms -->
                         <select class="custom-select mr-sm-2" id="article-count">
                             <option>Number of Articles</option>
                             <option value="1">1</option>
@@ -55,6 +60,8 @@
                 </div>
             </form>
         </div>
+
+        <!-- https://getbootstrap.com/docs/4.5/components/card/#header-and-footer -->
         <div class="card" style="width: 90%;">
             <div class="card-header">
                 Top Articles
