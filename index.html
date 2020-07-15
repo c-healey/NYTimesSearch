@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+    <title>New York Times Search</title>
+
+</head>
+
+<body>
+    <!-- https://getbootstrap.com/docs/4.5/components/navbar/ -->
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <span class="navbar-brand mx-auto mb-0">New York Times Search</span>
+    </nav>
+    <div class="container ">
+        <div class="card mb-3" style="width: 90%;">
+            <div class="card-header mb-2">
+                Search Terms
+            </div>
+            <form class="mx-4 my-2">
+                <div class="form-row mb-1">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Search Term" id="search-term">
+                    </div>
+
+                </div>
+                <div class="form-row mb-1">
+                    <div class="col ">
+                        <select class="custom-select mr-sm-2" id="article-count">
+                            <option>Number of Articles</option>
+                            <option value="1">1</option>
+                            <option selected value="5">5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Start Year (Optional" id="start-year">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="End Year (Optional)" id="end-year">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-secondary btn-block" id="search-button">Search</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary btn-block" id="clear-button">Clear</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="card" style="width: 90%;">
+            <div class="card-header">
+                Top Articles
+            </div>
+            <div class="list-group " id="list-results">
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
